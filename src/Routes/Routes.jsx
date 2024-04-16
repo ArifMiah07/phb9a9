@@ -1,19 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
-// import Root from "../layouts/Root";
+
 import Home from "../Pages/Home/Home";
 import Root from "../Layouts/Root/Root";
-import About from "../Pages/About/About";
-import More from "../Pages/More/More";
 import ImgDetails from "../Components/ImgDetails/ImgDetails";
-// import Banner from "../Pages/Banner/Banner";
-// import Home from "../Pages/Home/Home";
-// import Home from "../pages/Home/Home";
+import Error from "../Pages/Error/Error";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+import UserProfile from "../Pages/UserProfile/UserProfile";
+import LogIn from "../Pages/LogIn/LogIn";
+import Register from "../Pages/Register/Register";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>, 
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',
@@ -32,12 +33,20 @@ const router = createBrowserRouter([
                 // loader: ()=> fetch(`banner.json`)
             },
             {
-                path: '/about',
-                element: <About></About>
+                path: '/sign-in',
+                element: <LogIn></LogIn>
             },
             {
-                path: '/more',
-                element: <More></More>
+                path: '/register',
+                element: <Register></Register>
+            },
+            {
+                path: '/update-profile',
+                element: <UpdateProfile></UpdateProfile>
+            },
+            {
+                path: '/user-profile',
+                element: <UserProfile></UserProfile>
             },
         ]
     }    

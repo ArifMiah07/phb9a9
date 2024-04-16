@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import ResumeButton from "../../../Components/Buttons/ResumeButton";
+import LogInBtn from "../../../Components/Buttons/LogInBtn";
 
 
 const NavBar = () => {
@@ -12,21 +12,26 @@ const NavBar = () => {
                 </div>
                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                     <li><NavLink to={`/`}>Home</NavLink></li>
-                    <li><NavLink to={`/about`}>About</NavLink></li>
-                    <li><NavLink to={`/more`}>More</NavLink></li>
+                    <li><NavLink to={`/update-profile`}>update-profile</NavLink></li>
+                    <li><NavLink to={`/user-profile`}>user-profile</NavLink></li>
                 </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Arif Miah</a>
+                <a className="btn btn-ghost text-xl">Port-Land</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                 <li><NavLink to={`/`}>Home</NavLink></li>
-                    <li><NavLink to={`/about`}>About</NavLink></li>
-                    <li><NavLink to={`/more`}>More</NavLink></li>
+                    <li><NavLink to={`/update-profile`}>Update profile</NavLink></li>
+                    <li><NavLink to={`/user-profile`}>User profile</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <ResumeButton></ResumeButton>
+                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                    <div className="w-10 rounded-full">
+                    <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    </div>
+                </div>
+                <LogInBtn></LogInBtn>
             </div>
         </div>
     );
