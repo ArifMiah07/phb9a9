@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 const Error = () => {
     return (
         <div className=" border border-red-500 flex flex-col w-full h-screen items-center mx-auto justify-center">

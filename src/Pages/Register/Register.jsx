@@ -29,15 +29,15 @@ const Register = () => {
                         </div>
                         <div className="form-control">
                         <label className="label">
-                            <span className="label-text">Name</span>
-                        </label>
-                        <input type="text" name="photoUrl" placeholder="PhotoUrl" className="input input-bordered" required />
-                        </div>
-                        <div className="form-control">
-                        <label className="label">
                             <span className="label-text">Email</span>
                         </label>
                         <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+                        </div>
+                        <div className="form-control">
+                        <label className="label">
+                            <span className="label-text">PhotoUrl</span>
+                        </label>
+                        <input type="text" name="photoUrl" placeholder="PhotoUrl" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                         <label className="label">
@@ -52,7 +52,7 @@ const Register = () => {
                         <button className="btn btn-primary">Register</button>
                         </div>
                     </form>
-                    <p className="text-center mb-4">Already have a account? <Link to={'/sign-in'}> <span className="underline font-bold px-4 py-0 bg-green-300">Log In</span> </Link></p>
+                    <p className="text-center mb-4">Already have an account? <Link to={'/sign-in'}> <span className="underline font-bold px-4 py-0 bg-green-300">Log In</span> </Link></p>
                     </div>
                 </div>
             </div>

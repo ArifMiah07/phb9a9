@@ -60,7 +60,7 @@ const LogIn = () => {
                                 </button>
                             </div>
                         </div>
-                    <p className="text-center mb-4">Do not have a account? <Link to={'/register'}> <span className="underline font-bold px-4 py-0 bg-green-300">Register</span> </Link></p>
+                    <p className="text-center mb-4">Do not have an account? <Link to={'/register'}> <span className="underline font-bold px-4 py-0 bg-green-300">Register</span> </Link></p>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,8 @@
 4. react-helmet-async
 5. react icons ``` js from``` | ```js npm install react-icons --save```
 6. proptypes ```js npm i proptypes```
-
+### npm packages
+1. swipper js```js npm install swiper```
 
 ## color:
 #### cp:
@@ -24,8 +25,16 @@ B5E48C
 
 [
 
-## workflow-->
-=>navbar
+## workflow---
+
+1. navbar
+
+[https://i.ibb.co/mGXsSyk/aubrey-odom-ITzfg-P77-DTg-unsplash-min.jpg
+https://i.ibb.co/mtKyHBh/dillon-kydd-pvdx8c6-Y5-BY-unsplash-min.jpg
+https://i.ibb.co/zRbjZ3n/florian-schmidinger-b-79n-Oqf95-I-unsplash-min.jpg
+https://i.ibb.co/19gM4DZ/scott-webb-1ddol8rg-UH8-unsplash-min.jpg
+https://i.ibb.co/p4xYKfp/sieuwert-otterloo-aren8nutd1-Q-unsplash-min.jpg
+https://i.ibb.co/56K1zFx/todd-kent-178j8t-Jr-Nlc-unsplash-min.jpg]
 
 
 

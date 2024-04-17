@@ -9,11 +9,11 @@ import Features from "../Features/Features";
 
 const Home = () => {
     return (
-        <div className="h-ful ">
-        <Helmet>
-            <title>Portfolio | Home</title>
-        </Helmet>
-            <div>
+        <div className="h-full ">
+            <Helmet>
+                <title>Portfolio | Home</title>
+            </Helmet>
+            <div className="w-full mx-auto">
             <Banner></Banner>
             </div>
             <div>

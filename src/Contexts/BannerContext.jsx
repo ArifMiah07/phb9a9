@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react';
-
+import PropTypes from 'prop-types'
 // Create a new context
 export const BannerContext = createContext(null);
 
@@ -12,7 +12,7 @@ export const BannerProvider = ({ children }) => {
 
     // Fetch banner data when component mounts
     useEffect(() => {
-        fetch('/banner.json')
+        fetch('/banner-slide.json')
             .then(res => res.json())
             .then(data => setBannerData(data))
             .catch(error => console.error('Error fetching banner data:', error));
@@ -27,3 +27,7 @@ export const BannerProvider = ({ children }) => {
         </BannerContext.Provider>
     );
 };
+
+BannerProvider.propTypes = {
+    children: PropTypes.object
+}
