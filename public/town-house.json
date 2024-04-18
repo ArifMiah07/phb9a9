@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "Category": "Apartments",
+    "listing": 12,
+    "imgUrl": "https://i.ibb.co/8KbFDtX/sandy-kane-ag-WOZR0oe-AM-unsplash-min.jpg"
+  },
+  {
+    "id": 2,
+    "Category": "Houses",
+    "listing": 18,
+    "imgUrl": "https://i.ibb.co/FnMmXPt/daniel-barnes-RKd-Ll-Tyjm5g-unsplash-min.jpg"
+  },
+  {
+    "id": 3,
+    "Category": "Office",
+    "listing": 5,
+    "imgUrl": "https://i.ibb.co/myBw0rD/ernie-journeys-Jq-Zl-Fn-J-Kp-E-unsplash-min.jpg"
+  },
+  {
+    "id": 4,
+    "Category": "Villas",
+    "listing": 9,
+    "imgUrl": "https://i.ibb.co/L9537nt/jane-sorensen-Lt89-XEJedr-A-unsplash-min.jpg"
+  },
+  {
+    "id": 5,
+    "Category": "Condos",
+    "listing": 15,
+    "imgUrl": "https://i.ibb.co/QpWkCx1/jeremy-boley-76d-Hjx3-Jm-M-unsplash-min.jpg"
+  },
+  {
+    "id": 6,
+    "Category": "Duplex",
+    "listing": 7,
+    "imgUrl": "https://i.ibb.co/fxwvcHH/ross-joyner-TX6d-Bi-Mw-BV0-unsplash-min.jpg"
+  }
+]
+

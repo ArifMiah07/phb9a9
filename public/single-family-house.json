@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "location": "New York",
+      "listing": 23,
+      "imgUrl": "https://i.ibb.co/KyzvsfD/derek-torsani-9gw-Pg-Ca8y-E-unsplash-min.jpg"
+    },
+    {
+      "id": 2,
+      "location": "Los Angeles",
+      "listing": 30,
+      "imgUrl": "https://i.ibb.co/F7ZBbKT/dillon-kydd-2ke-CPb73a-QY-unsplash-min.jpg"
+    },
+    {
+      "id": 3,
+      "location": "Chicago",
+      "listing": 18,
+      "imgUrl": "https://i.ibb.co/HD3SXWR/irene-rego-4-I2gvt-DOhrc-unsplash-min.jpg"
+    },
+    {
+      "id": 4,
+      "location": "Miami",
+      "listing": 15,
+      "imgUrl": "https://i.ibb.co/R6XcJPg/jacques-bopp-Hh18-POSx5qk-unsplash-min.jpg"
+    },
+    {
+      "id": 5,
+      "location": "Dallas",
+      "listing": 20,
+      "imgUrl": "https://i.ibb.co/3Cvkg6q/r-architecture-2g-Dwl-Iim3-Uw-unsplash-min.jpg"
+    },
+    {
+      "id": 6,
+      "location": "Seattle",
+      "listing": 12,
+      "imgUrl": "https://i.ibb.co/x6SGrRn/roger-starnes-sr-34r6y-B4y-URg-unsplash-min.jpg"
+    },
+    {
+      "id": 7,
+      "location": "Atlanta",
+      "listing": 17,
+      "imgUrl": "https://i.ibb.co/FHR1vYR/sieuwert-otterloo-aren8nutd1-Q-unsplash-min.jpg"
+    },
+    {
+      "id": 8,
+      "location": "Denver",
+      "listing": 14,
+      "imgUrl": "https://i.ibb.co/x8hWvgV/todd-kent-178j8t-Jr-Nlc-unsplash-min.jpg"
+    },
+    {
+      "id": 9,
+      "location": "Boston",
+      "listing": 25,
+      "imgUrl": "https://i.ibb.co/tctJ0H8/vita-vilcina-Kt-Oid0-FLjq-U-unsplash-min.jpg"
+    },
+    {
+      "id": 10,
+      "location": "San Francisco",
+      "listing": 28,
+      "imgUrl": "https://i.ibb.co/1XzXcHq/webaliser-TPTXZd9m-Oo-unsplash-min.jpg"
+    },
+    {
+      "id": 11,
+      "location": "Houston",
+      "listing": 21,
+      "imgUrl": "https://i.ibb.co/FhQ50Nj/zac-gudakov-5-QLCohw-Vnd-Q-unsplash-min.jpg"
+    },
+    {
+      "id": 12,
+      "location": "Phoenix",
+      "listing": 16,
+      "imgUrl": "https://i.ibb.co/MVQYMKj/zero-take-Wv-Hrr-R1-C5-Po-unsplash-min.jpg"
+    }
+  ]
+  

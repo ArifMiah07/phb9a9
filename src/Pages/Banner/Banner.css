@@ -1,0 +1,15 @@
+.elementor-heading-title {
+    color: #fff;
+    font-family: roboto, Sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.2em;
+}
+.elementor-heading-para{
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6em;
+}
