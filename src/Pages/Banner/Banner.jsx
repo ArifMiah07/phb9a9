@@ -31,8 +31,8 @@ const Banner = () => {
                     {bannerData.map((data) => (
                     <SwiperSlide key={data.id}>
                         <div>
-                        <img className="relative z-0" src={data.url} alt="" />
-                        <div className="absolute z-50 -right-1/2 -top-1/2 sm:-right-1/2 sm:-top-1/2 md:-right-0 md:-top-0  mx-auto">
+                        <img className="relative " src={data.url} alt="" />
+                        <div className="absolute  -right-1/2 -top-1/2 sm:-right-1/2 sm:-top-1/2 md:-right-0 md:-top-0  mx-auto">
                         <h1 className=" text-center elementor-heading-title  ">Find Your Dream Home</h1>
                         <p className="elementor-heading-para"> We are recognized for exceeding client expectations and delivering great results through dedication, ease of process, and extraordinary services to our worldwide clients.</p>    
                         </div>

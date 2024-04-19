@@ -1,0 +1,14 @@
+
+
+const ApartmentCDPost = ({cdData}) => {
+    console.log(cdData)
+    const { estate_title, segment_name, description, price, status, area, location, facilities, image } = cdData;
+    return (
+        <div>
+            f{price}
+            <img className="w-2/6" src={image} alt="" />
+        </div>
+    );
+};
+
+export default ApartmentCDPost;

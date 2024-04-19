@@ -6,9 +6,9 @@ import { Helmet } from "react-helmet-async";
 
 const Root = () => {
     return (
-        <div className=" flex flex-col h-fit max-w-full mx-auto font-poppins ">
+        <div className="relative flex flex-col h-fit max-w-full mx-auto font-poppins ">
             <Helmet><title>Home || Root</title></Helmet>
-            <div className="border border-red-200 h-fit ">
+            <div className="border mb-20 border-red-200 h-fit ">
                 <NavBar></NavBar>
             </div>
             <div className="border border-red-200 flex-grow">

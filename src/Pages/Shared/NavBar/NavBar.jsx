@@ -4,7 +4,7 @@ import LogInBtn from "../../../Components/Buttons/LogInBtn";
 
 const NavBar = () => {
     return (
-        <div className="navbar bg-[#D9ED92]">
+        <div className="fixed navbar bg-[#D9ED92] ">
             <div className="navbar-start">
                 <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

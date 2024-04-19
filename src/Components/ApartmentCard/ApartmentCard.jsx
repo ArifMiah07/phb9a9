@@ -6,7 +6,7 @@ const ApartmentCard = ({apartment}) => {
 
     return (
         <div className="flex flex-col justify-between">
-            <h1>rgus us aoareh card {apartment.length}</h1>
+            <h1>rgus us aoareh card</h1>
             <div>
                 <img className="bg-cover bg-center " src={image} alt="" />
             </div>
@@ -16,7 +16,7 @@ const ApartmentCard = ({apartment}) => {
                 <p>{description}</p>
             </div>
             <div>
-                <Link to={`/apartments-card-details/:${id}`}><button className="btn btn-primary">View Property</button></Link>
+                <Link to={`/apartments-card-details/${id}`}><button className="btn btn-primary">View Property</button></Link>
             </div>
         </div>
     );
