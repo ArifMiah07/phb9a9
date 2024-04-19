@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Sprawling Farm with Vineyard",
+      "segment_name": "Land",
+      "description": "A vast agricultural land with a thriving vineyard and scenic views.",
+      "price": "$2,000,000",
+      "status": "sale",
+      "area": "50 acres",
+      "location": "Napa Valley, California",
+      "facilities": ["Vineyard", "Irrigation system", "Farmhouse"],
+      "image": "https://i.ibb.co/7zbzZNK/henry-becerra-0-ZVbng-Tr7-X4-unsplash-min.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "Rustic Ranch with Livestock",
+      "segment_name": "Land",
+      "description": "A charming ranch suitable for livestock farming and agricultural activities.",
+      "price": "$800,000",
+      "status": "sale",
+      "area": "100 acres",
+      "location": "Texas Hill Country",
+      "facilities": ["Barns", "Pastures", "Ponds"],
+      "image": "https://i.ibb.co/0Qh1MZF/henry-becerra-js-Hk0z-Jfv-Sc-unsplash-min.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Forest Retreat with Timber Rights",
+      "segment_name": "Land",
+      "description": "A secluded forest land offering timber harvesting rights and recreational opportunities.",
+      "price": "$1,500,000",
+      "status": "sale",
+      "area": "300 acres",
+      "location": "Pacific Northwest",
+      "facilities": ["Timber rights", "Trails", "Cabins"],
+      "image": "https://i.ibb.co/B6ZpkjL/marten-bjork-4-WBIy-O-2-Sb-U-unsplash-min.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Fertile Farmland for Agriculture",
+      "segment_name": "Land",
+      "description": "Highly productive farmland suitable for crop cultivation and agribusiness.",
+      "price": "$1,200,000",
+      "status": "sale",
+      "area": "200 acres",
+      "location": "Midwest",
+      "facilities": ["Irrigation system", "Barns", "Crop storage"],
+      "image": "https://i.ibb.co/chjYMgv/pierre-chatel-innocenti-gxyeia7-Syuk-unsplash-min.jpg"
+    },
+    {
+      "id": 5,
+      "estate_title": "Luxury Vineyard with Estate",
+      "segment_name": "Land",
+      "description": "An exclusive vineyard estate offering luxury amenities and wine production facilities.",
+      "price": "$3,500,000",
+      "status": "sale",
+      "area": "30 acres",
+      "location": "Sonoma County, California",
+      "facilities": ["Winery", "Mansion", "Tasting room"],
+      "image": "https://i.ibb.co/ckJxHsk/thepowercouple-FAh-Ag0a-T6ro-unsplash-min.jpg"
+    },
+    {
+      "id": 6,
+      "estate_title": "Organic Farm with Greenhouses",
+      "segment_name": "Land",
+      "description": "An organic farm equipped with modern greenhouses for sustainable agriculture.",
+      "price": "$1,000,000",
+      "status": "sale",
+      "area": "80 acres",
+      "location": "Upstate New York",
+      "facilities": ["Greenhouses", "Farmhouse", "Livestock pens"],
+      "image": "https://i.ibb.co/CMF5ZND/saru-robert-9r-P3mxf8q-WI-unsplash-min.jpg"
+    }  
+]
+  

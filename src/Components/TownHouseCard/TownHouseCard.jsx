@@ -1,16 +1,19 @@
-
+import PropTypes from 'prop-types'
 
 const TownHouseCard = ({card}) => {
     return (
-        <div>
-            <h1>this is card</h1>
+        <>
             <div>
-                <div>
-                    <img src={card.imgUrl} alt="" />
-                </div>
+                <img src={card.imgUrl} className='relative' alt="" />
+                <h1 className='absolute top-10 text-[222px] text-white'>{card.category}</h1>
+                <p>{card.listing} listing</p>
             </div>
-        </div>
+        </>
     );
 };
+
+TownHouseCard.propTypes ={
+    card: PropTypes.object
+}
 
 export default TownHouseCard;
