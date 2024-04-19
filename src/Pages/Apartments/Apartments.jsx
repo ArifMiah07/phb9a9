@@ -1,19 +1,23 @@
-import { useEffect } from "react";
-import { useState } from "react";
+// import { useEffect } from "react";
+// import { useState } from "react";
 import ApartmentCard from "../../Components/ApartmentCard/ApartmentCard";
+import { useApartmentContext } from "../../Contexts/ApartmentContext";
 
 const Apartments = () => {
-    const [apartments, setApartments] = useState([]);
+    // const [apartments, setApartments] = useState([]);
 
-    useEffect(() => {
-        fetch('apartmants.json')
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                setApartments(data); // Update state with fetched data
-            })
-            .catch(error => console.error('Error fetching apartments:', error));
-    }, []);
+    const {apartmentsData} = useApartmentContext();
+    console.log(apartmentsData);
+
+    // useEffect(() => {
+    //     fetch('apartments.json')
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log(data);
+    //             setApartments(data); // Update state with fetched data
+    //         })
+    //         .catch(error => console.error('Error fetching apartments:', error));
+    // }, []);
 
     return (
         <div className="max-w-[1170px] mx-auto border border-red-400">
@@ -22,7 +26,7 @@ const Apartments = () => {
             
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {
-                    apartments.map((apartment)=> <ApartmentCard key={apartment.id} apartment={apartment}></ApartmentCard>)
+                    apartmentsData.map((apartment)=> <ApartmentCard key={apartment.id} apartment={apartment}></ApartmentCard>)
                 }
             </div>
         </div>

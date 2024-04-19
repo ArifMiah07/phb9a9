@@ -7,6 +7,7 @@ import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import UserProfile from "../Pages/UserProfile/UserProfile";
 import LogIn from "../Pages/LogIn/LogIn";
 import Register from "../Pages/Register/Register";
+import ApartmentCardDetails from "../Components/ApartmentCardDetails/ApartmentCardDetails";
 
 
 const router = createBrowserRouter([
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
             {
                 path: '/user-profile',
                 element: <UserProfile></UserProfile>
+            },
+            {
+                path: '/apartments-card-details/:id',
+                element: <ApartmentCardDetails></ApartmentCardDetails>
             }
         ]
     }    
