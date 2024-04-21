@@ -9,6 +9,7 @@ export const useBannerContext = () => useContext(BannerContext);
 // Banner data provider component
 export const BannerProvider = ({ children }) => {
     const [bannerData, setBannerData] = useState([]);
+    const [vacationData, setVacationData] = useState([]);
 
     // Fetch banner data when component mounts
     useEffect(() => {
@@ -17,8 +18,16 @@ export const BannerProvider = ({ children }) => {
             .then(data => setBannerData(data))
             .catch(error => console.error('Error fetching banner data:', error));
     }, []);
+
+    useEffect(()=>{
+        fetch('/vacation-rentals.json')
+        .then(res=> res.json())
+        .then(data=> setVacationData(data))
+        .catch(error => console.error('Error fetching vacation data:', error));
+    }, [])
     const contextBannerData = {
         bannerData,
+        vacationData,
     }
 
     return (

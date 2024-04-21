@@ -4,7 +4,7 @@ import LogInBtn from "../../../Components/Buttons/LogInBtn";
 
 const NavBar = () => {
     return (
-        <div className="fixed navbar bg-[#D9ED92] ">
+        <div className="navbar bg-[#D9ED92] ">
             <div className="navbar-start">
                 <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,7 +28,8 @@ const NavBar = () => {
             <div className="navbar-end">
                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
-                    <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        
                     </div>
                 </div>
                 <LogInBtn></LogInBtn>
