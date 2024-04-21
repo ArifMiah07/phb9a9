@@ -1,7 +1,7 @@
+import PropTypes from 'prop-types';
 
-
-const TestimonialsCard = ({testimonial}) => {
-    const { id, name, role, testimonialText } = testimonial;
+const TestimonialsCard = ({t}) => {
+    const { id, name, role, testimonialText } = t;
 
     return (
         <div className="max-w-lg w-full bg-white shadow-md rounded-lg overflow-hidden m-4">
@@ -18,5 +18,9 @@ const TestimonialsCard = ({testimonial}) => {
         </div>
     );
 };
+
+TestimonialsCard.propTypes = {
+    t: PropTypes.object
+}
 
 export default TestimonialsCard;

@@ -1,3 +1,4 @@
+// import TestimonialsCard from "../../Components/TestimonialsCard/TestimonialsCard";
 import TestimonialsCard from "../../Components/TestimonialsCard/TestimonialsCard";
 import { useBannerContext } from "../../Contexts/BannerContext";
 
@@ -9,8 +10,8 @@ const Testimonials = () => {
     return (
         <div>
             <div className="flex flex-wrap justify-center">
-            {testimonials.map((testimonial) => (
-                <TestimonialsCard key={testimonial.id} testimonial={testimonial} />
+            {testimonials.map((t) => (
+                <TestimonialsCard key={t.id} t={t}></TestimonialsCard>
             ))}
         </div>
         </div>
