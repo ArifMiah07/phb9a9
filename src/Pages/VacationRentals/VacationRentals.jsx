@@ -5,34 +5,37 @@ import 'swiper/css/bundle';
 
 
 const VacationRentals = () => {
-    const {bannerData} = useBannerContext();
-    console.log(bannerData);
+    const {vacationData} = useBannerContext();
+    console.log(vacationData);
     return (
         <div>
             <h1>Vacation Rentals Property</h1>
             <p>These are the latest properties in the Sales category. You can create the list using the “latest listing shortcode” and show items by specific categories.</p>
             
-            <div className="border mx-auto border-red-950 w-10/12 flex justify-center">
+            <div className=" border mx-auto border-red-950 w-10/12 flex justify-center">
                 
                 <Swiper
                 modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
-                slidesPerView={1}
+                slidesPerView={3}
             
                 loop={true}
                 autoplay = {{delay : 2610}}
                 pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 >
-                    {bannerData.map((data) => (
+                    {vacationData.map((data) => (
                     <SwiperSlide key={data.id}>
                         <div className="">
                             <div className="">
-                                <img className=" " src={data.url} alt="" />
+                                <img className=" " src={data.imgUrl} alt="" />
                             </div>
-                            <div></div>
+                            <div>
+                                <h1>{data.title}</h1>
+                                <p>{data.price}</p>
+                                <p>{data.description}</p>
+                            </div>
                         
                         </div>
                     </SwiperSlide>
