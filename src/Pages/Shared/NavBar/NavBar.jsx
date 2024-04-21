@@ -14,6 +14,7 @@ const NavBar = () => {
                     <li><NavLink to={`/`}>Home</NavLink></li>
                     <li><NavLink to={`/update-profile`}>update-profile</NavLink></li>
                     <li><NavLink to={`/user-profile`}>user-profile</NavLink></li>
+                    <li><NavLink to={`/about`}>About</NavLink></li>
                 </ul>
                 </div>
                 <a className="btn btn-ghost text-xl">Port-Land</a>
@@ -23,13 +24,14 @@ const NavBar = () => {
                 <li><NavLink to={`/`}>Home</NavLink></li>
                     <li><NavLink to={`/update-profile`}>Update profile</NavLink></li>
                     <li><NavLink to={`/user-profile`}>User profile</NavLink></li>
+                    <li><NavLink to={`/about`}>About</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">
                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
                         <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                        
+
                     </div>
                 </div>
                 <LogInBtn></LogInBtn>

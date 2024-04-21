@@ -8,17 +8,26 @@ const VacationRentals = () => {
     const {vacationData} = useBannerContext();
     console.log(vacationData);
     return (
-        <div>
-            <h1>Vacation Rentals Property</h1>
-            <p>These are the latest properties in the Sales category. You can create the list using the “latest listing shortcode” and show items by specific categories.</p>
+        <div className="lg:w-[1170px] mx-auto my-12">
+            <h1  className="text-center text-3xl tracking-wider text-[#222222] font-medium">Vacation Rentals Property</h1>
+            <p className="text-[#5C727D] my-6 text-center leading-6 ">These are the latest properties in the Sales category. You can create the list using the “latest listing shortcode” and show items by specific categories.</p>
             
-            <div className=" border mx-auto border-red-950 w-10/12 flex justify-center">
+            <div className="p-6 flex justify-center">
                 
                 <Swiper
                 modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
                 slidesPerView={3}
-            
+                breakpoints={{
+                    576: {
+                      width: 576,
+                      slidesPerView: 1,
+                    },
+                    768: {
+                      width: 768,
+                      slidesPerView: 2,
+                    },
+                  }}
                 loop={true}
                 autoplay = {{delay : 2610}}
                 pagination={{ clickable: true }}
@@ -26,8 +35,8 @@ const VacationRentals = () => {
                 onSwiper={(swiper) => console.log(swiper)}
                 >
                     {vacationData.map((data) => (
-                    <SwiperSlide key={data.id}>
-                        <div className="">
+                    <SwiperSlide className="flex flex-col md:flex md:flex-row" key={data.id}>
+                        <div className="container lg:p-8">
                             <div className="">
                                 <img className=" " src={data.imgUrl} alt="" />
                             </div>

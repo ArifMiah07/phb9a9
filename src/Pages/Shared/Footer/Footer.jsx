@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         // <div className="w-full h-full p-5 bg-[#34A0A4] ">
-            <footer className="footer footer-center p-10 bg-[#34A0A4] w-full h-full p-5 text-base-content rounded">
+            <footer className="footer footer-center p-12 bg-[#34A0A4] w-full h-full text-base-content rounded">
                 <nav className="grid grid-flow-col gap-4">
                     <a className="link link-hover">About us</a>
                     <a className="link link-hover">Contact</a>
@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
                 </nav> 
                 <aside>
-                    <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+                    <p>Copyright © 2024 - All right reserved by Port-Land Ltd</p>
                 </aside>
             </footer>
         // </div>

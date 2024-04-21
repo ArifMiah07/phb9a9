@@ -6,17 +6,10 @@ const ApartmentCardDetails = () => {
     const data = useLoaderData();
     const intId = parseInt(id);
     
-    // Use the find method to find the apartment by ID
     const cdData =  data.find(cd => cd.id === intId);
 
-    // if (!apartment) {
-    //     return <div>No apartment found with ID {id}</div>;
-    // }
-
-    // const { estate_title, segment_name, description, price, status, area, location, facilities, image } = apartment;
-
     return (
-        <div className="lg:w-[1170px] mx-auto my-12 h-screen">
+        <div className="lg:w-[1170px] p-6 mx-auto my-12 h-fit">
             <ApartmentCDPost key={cdData.id} cdData={cdData}></ApartmentCDPost>
         </div>
     );

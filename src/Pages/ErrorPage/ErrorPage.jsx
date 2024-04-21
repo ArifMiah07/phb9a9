@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-const Error = () => {
+
+const ErrorPage = () => {
     return (
         <div className=" border border-red-500 flex flex-col w-full h-screen items-center mx-auto justify-center">
             <h1 className="text-red-700 text-6xl font-bold p-4 m-5">Oops!</h1>
@@ -10,4 +11,4 @@ const Error = () => {
     );
 };
 
-export default Error;
+export default ErrorPage;

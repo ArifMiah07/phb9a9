@@ -12,6 +12,9 @@ export const BannerProvider = ({ children }) => {
     const [vacationData, setVacationData] = useState([]);
     const [realEstateAgents, setRealEstateAgents] = useState([]);
     const [testimonials, setTestimonials] = useState([]);
+    const [seniorLC, setSeniorLC] = useState([]);
+    const [tHouseData, setTHouseData] = useState([]);
+
 
 
     // Fetch json data 
@@ -41,13 +44,29 @@ export const BannerProvider = ({ children }) => {
         fetch('/testimonials.json')
         .then(res => res.json())
         .then(data => setTestimonials(data));
-    }, [])
+    }, []);
+
+    useEffect( ()=>{
+        fetch('/senior-com.json')
+        .then(res=> res.json())
+        .then(data=> setSeniorLC(data))
+        .catch(error => console.error(error));
+    },[]);
+
+    useEffect( ()=>{
+        fetch('/town-house.json')
+        .then(res=> res.json())
+        .then(data=> setTHouseData(data))
+        .catch(error=> console.log(error));
+    }, []);
 
     const contextBannerData = {
         bannerData,
         vacationData,
         realEstateAgents,
         testimonials,
+        seniorLC,
+        tHouseData,
     }
 
     return (

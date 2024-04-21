@@ -11,7 +11,6 @@ import VacationRentals from "../VacationRentals/VacationRentals";
 const Features = () => {
     return (
         <div>
-            <h1>this is features section</h1>
             <SingleFamilyHouse></SingleFamilyHouse>
             <TownHouses></TownHouses>
             <Apartments></Apartments>

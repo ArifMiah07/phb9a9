@@ -1,26 +1,44 @@
 [
     {
         "id": 1,
-        "url" : "https://i.ibb.co/mGXsSyk/aubrey-odom-ITzfg-P77-DTg-unsplash-min.jpg"
+        "url": "https://i.ibb.co/mGXsSyk/aubrey-odom-ITzfg-P77-DTg-unsplash-min.jpg",
+        "title": "Gorgeous Home in Jersey",
+        "price": "$750,000",
+        "description": "This property is mostly wooded and sits high on a hilltop overlooking the Mohawk River Valley. Located right in the heart of Upstate New York, this home is ready for new owners."
     },
     {
         "id": 2,
-        "url" : "https://i.ibb.co/mtKyHBh/dillon-kydd-pvdx8c6-Y5-BY-unsplash-min.jpg"
+        "url": "https://i.ibb.co/mtKyHBh/dillon-kydd-pvdx8c6-Y5-BY-unsplash-min.jpg",
+        "title": "Luxury Beach House",
+        "price": "$1,200,000",
+        "description": "Stunning beachfront villa with panoramic ocean views. Ideal for those seeking a luxurious lifestyle by the sea."
     },
     {
         "id": 3,
-        "url" : "https://i.ibb.co/zRbjZ3n/florian-schmidinger-b-79n-Oqf95-I-unsplash-min.jpg"
+        "url": "https://i.ibb.co/zRbjZ3n/florian-schmidinger-b-79n-Oqf95-I-unsplash-min.jpg",
+        "title": "Modern City Apartment",
+        "price": "$550,000",
+        "description": "Contemporary apartment located in the bustling city center. Close to amenities, restaurants, and public transportation."
     },
     {
         "id": 4,
-        "url" : "https://i.ibb.co/19gM4DZ/scott-webb-1ddol8rg-UH8-unsplash-min.jpg"
+        "url": "https://i.ibb.co/19gM4DZ/scott-webb-1ddol8rg-UH8-unsplash-min.jpg",
+        "title": "Rustic Countryside Cottage",
+        "price": "$350,000",
+        "description": "Charming countryside cottage nestled in a serene environment. Perfect for those seeking peace and tranquility."
     },
     {
         "id": 5,
-        "url" : "https://i.ibb.co/p4xYKfp/sieuwert-otterloo-aren8nutd1-Q-unsplash-min.jpg"
+        "url": "https://i.ibb.co/p4xYKfp/sieuwert-otterloo-aren8nutd1-Q-unsplash-min.jpg",
+        "title": "Mountain View Chalet",
+        "price": "$950,000",
+        "description": "Cozy chalet with breathtaking mountain views. Ideal for nature lovers and outdoor enthusiasts."
     },
     {
         "id": 6,
-        "url" : "https://i.ibb.co/56K1zFx/todd-kent-178j8t-Jr-Nlc-unsplash-min.jpg"
+        "url": "https://i.ibb.co/56K1zFx/todd-kent-178j8t-Jr-Nlc-unsplash-min.jpg",
+        "title": "Elegant Townhouse",
+        "price": "$680,000",
+        "description": "Sophisticated townhouse located in a prestigious neighborhood. Close to schools, parks, and shopping centers."
     }
 ]

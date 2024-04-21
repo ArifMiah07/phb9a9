@@ -2,19 +2,20 @@ import { createBrowserRouter } from "react-router-dom";
 
 import Home from "../Pages/Home/Home";
 import Root from "../Layouts/Root/Root";
-// import Error from "../Pages/Error/Error";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import UserProfile from "../Pages/UserProfile/UserProfile";
 import LogIn from "../Pages/LogIn/LogIn";
 import Register from "../Pages/Register/Register";
 import ApartmentCardDetails from "../Components/ApartmentCardDetails/ApartmentCardDetails";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import About from "../Pages/About/About";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>, 
-        
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: '/user-profile',
                 element: <UserProfile></UserProfile>
+            },
+            {
+                path: '/about',
+                element: <About></About>
             },
             {
                 path: '/apartments-card-details/:id',
