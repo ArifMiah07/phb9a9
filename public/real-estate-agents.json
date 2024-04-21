@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "John Smith",
+        "email": "john.smith@example.com",
+        "phone": "+1-123-456-7890",
+        "profileLink": "https://agents/john-smith.com",
+        "image": "https://main.wpresidence.net/wp-content/uploads/2014/05/person_sam_davies-500x328.webp",
+        "role": "Buying Agent",
+        "title": "Working with first-time homebuyers, luxury listings, and investment properties."
+    },
+    {
+        "id": 2,
+        "name": "Emily Johnson",
+        "email": "emily.johnson@example.com",
+        "phone": "+1-234-567-8901",
+        "profileLink": "https://agents/emily-johnson.com",
+        "image": "https://main.wpresidence.net/wp-content/uploads/2014/05/person3-500x328.webp",
+        "role": "Sales Agent",
+        "title": "Specializes in residential and commercial property sales."
+    },
+    {
+        "id": 3,
+        "name": "Michael Williams",
+        "email": "michael.williams@example.com",
+        "phone": "+1-345-678-9012",
+        "profileLink": "https://agents/michael-williams.com",
+        "image": "https://main.wpresidence.net/wp-content/uploads/2014/05/person7-500x328.webp",
+        "role": "Property Manager",
+        "title": "Expert in managing rental properties and lease agreements."
+    },
+    {
+        "id": 4,
+        "name": "Sophia Davis",
+        "email": "sophia.davis@example.com",
+        "phone": "+1-456-789-0123",
+        "profileLink": "https://agents/sophia-davis.com",
+        "image": "https://main.wpresidence.net/wp-content/uploads/2014/05/person3-500x328.webp",
+        "role": "Listing Agent",
+        "title": "Helping sellers list their properties and navigate the selling process."
+    },
+    {
+        "id": 5,
+        "name": "William Brown",
+        "email": "william.brown@example.com",
+        "phone": "+1-567-890-1234",
+        "profileLink": "https://agents/william-brown.com",
+        "image": "https://main.wpresidence.net/wp-content/uploads/2014/05/person7-500x328.webp",
+        "role": "Real Estate Broker",
+        "title": "Experienced broker facilitating real estate transactions and negotiations."
+    },
+    {
+        "id": 6,
+        "name": "John Smith",
+        "email": "john.smith@example.com",
+        "phone": "+1-123-456-7890",
+        "profileLink": "https://agents/john-smith.com",
+        "image": "https://main.wpresidence.net/wp-content/uploads/2014/05/person_sam_davies-500x328.webp",
+        "role": "Buying Agent",
+        "title": "Working with first-time homebuyers, luxury listings, and investment properties."
+    }
+]

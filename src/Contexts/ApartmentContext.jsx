@@ -25,5 +25,5 @@ export const ApartmentProvider = ({children}) =>{
     )
 };
 ApartmentProvider.propTypes = {
-    children: PropTypes.object
+    children: PropTypes.node
 }
