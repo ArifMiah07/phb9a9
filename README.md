@@ -7,6 +7,7 @@
 4. react-helmet-async
 5. react icons ``` js from``` | ```js npm install react-icons --save```
 6. proptypes ```js npm i proptypes```
+7. npm install firebase
 ### npm packages
 1. swipper js```js npm install swiper```
 
