@@ -4,7 +4,7 @@
 const UpdateProfile = () => {
     // const { currentUser, updateProfile } = useAuth(); // Use Firebase Auth hook
 
-    // const [userData, setUserData] = useState({
+    // const [user, setUser] = useState({
     //     fullName: currentUser.displayName || '',
     //     email: currentUser.email || '',
     //     password: '',
@@ -15,7 +15,7 @@ const UpdateProfile = () => {
 
     // const handleChange = (e) => {
     //     const { name, value } = e.target;
-    //     setUserData((prevState) => ({
+    //     setUser((prevState) => ({
     //         ...prevState,
     //         [name]: value,
     //     }));
@@ -25,9 +25,9 @@ const UpdateProfile = () => {
     //     e.preventDefault();
 
     //     // Update display name if changed
-    //     if (userData.fullName !== currentUser.displayName) {
+    //     if (user.fullName !== currentUser.displayName) {
     //         try {
-    //             await updateProfile({ displayName: userData.fullName });
+    //             await updateProfile({ displayName: user.fullName });
     //         } catch (error) {
     //             console.error('Error updating display name:', error.message);
     //             // Handle error (e.g., display error message to user)
@@ -35,8 +35,8 @@ const UpdateProfile = () => {
     //     }
 
     //     // Reset form after submission
-    //     setUserData({
-    //         ...userData,
+    //     setUser({
+    //         ...user,
     //         password: '',
     //         confirmPassword: '',
     //     });
@@ -49,12 +49,48 @@ const UpdateProfile = () => {
             <form  className="max-w-lg mx-auto">
                 <div className="mb-4">
                     <label htmlFor="fullName" className="block text-sm font-semibold">Full Name</label>
-                    {/* value={userData.fullName}
+                    {/* value={user.fullName}
                         onChange={handleChange} */}
                     <input
                         type="text"
                         id="fullName"
                         name="fullName"
+                        
+                        className="w-full px-4 py-2 mt-1 rounded border focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    />
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="bio" className="block text-sm font-semibold">bio</label>
+                    {/* value={user.fullName}
+                        onChange={handleChange} */}
+                    <input
+                        type="text"
+                        id="bio"
+                        name="bio"
+                        
+                        className="w-full px-4 py-2 mt-1 rounded border focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    />
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="avatar" className="block text-sm font-semibold">avatar</label>
+                    {/* value={user.fullName}
+                        onChange={handleChange} */}
+                    <input
+                        type="text"
+                        id="avatar"
+                        name="avatar"
+                        
+                        className="w-full px-4 py-2 mt-1 rounded border focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    />
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="email" className="block text-sm font-semibold">email</label>
+                    {/* value={user.fullName}
+                        onChange={handleChange} */}
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
                         
                         className="w-full px-4 py-2 mt-1 rounded border focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                     />

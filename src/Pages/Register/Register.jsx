@@ -1,9 +1,10 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Contexts/AuthProvider";
 
 
 const Register = () => {
+    const [displayName, setDisplayName] = useState('')
 
     const {createUser} = useContext(AuthContext);
 
@@ -21,10 +22,12 @@ const Register = () => {
         createUser(email, password)
         .then(result=> {
             console.log(result.user);
+            
         })
         .catch(error =>{
             console.error(error);
-        })
+        });
+        setDisplayName(name);
 
     }
 

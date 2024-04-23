@@ -7,7 +7,7 @@ import { AuthContext } from "../../Contexts/AuthProvider";
 
 const LogIn = () => {
 
-    const {signIn} = useContext(AuthContext);
+    const {signIn, signInWithGoogle} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
     console.log('linlip',location);
@@ -28,11 +28,15 @@ const LogIn = () => {
         })
         .catch(error =>{
             console.log(error);
-        })
+        });
 
 
-
+        
+        
     }
+    const handleGoogleLogin = () => {
+        signInWithGoogle(); 
+    };
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
@@ -72,7 +76,7 @@ const LogIn = () => {
                     </form>
                     <div className=" flex flex-col gap-5 ">
                             <div className="flex px-5 pb-5 gap-2 flex-col ">
-                                <button className="btn btn-outline">
+                                <button onClick={handleGoogleLogin} className="btn btn-outline">
                                 <FcGoogle />
                                     Login with Google
                                 </button>

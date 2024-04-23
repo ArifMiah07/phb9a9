@@ -1,13 +1,17 @@
-# Arif Miah | Portfolio
+# Port Land
 
-### use npm pak:
+--- 
+note: i added aos and animate css but due to bigger img size website keeps loading for minutes, maybe it would be a problem to see animation 
+---
+
+### installed:
 1. react router 
 2. tailwind css
 3. daisyUI 
 4. react-helmet-async
 5. react icons ``` js from``` | ```js npm install react-icons --save```
 6. proptypes ```js npm i proptypes```
-7. npm install firebase
+7. firebase```js npm install firebase```
 ### npm packages
 1. swipper js```js npm install swiper```
 2. AOS ``` js npm install aos --save  ```
