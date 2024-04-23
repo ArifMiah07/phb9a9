@@ -2,6 +2,7 @@ import { useBannerContext } from "../../Contexts/BannerContext";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css/bundle';
+import 'animate.css';
 
 
 const VacationRentals = () => {
@@ -9,8 +10,8 @@ const VacationRentals = () => {
     console.log(vacationData);
     return (
         <div className="lg:w-[1170px] mx-auto my-12">
-            <h1  className="text-center text-3xl tracking-wider text-[#222222] font-medium">Vacation Rentals Property</h1>
-            <p className="text-[#5C727D] my-6 text-center leading-6 ">These are the latest properties in the Sales category. You can create the list using the “latest listing shortcode” and show items by specific categories.</p>
+            <h1  className="text-center text-3xl tracking-wider text-[#222222] font-medium  animate__animated animate__bounce animate__delay-2s">Vacation Rentals Property</h1>
+            <p className="text-[#5C727D] my-6 text-center leading-6 animate__animated animate__bounce animate__delay-2s ">These are the latest properties in the Sales category. You can create the list using the “latest listing shortcode” and show items by specific categories.</p>
             
             <div className="p-6 flex justify-center">
                 
