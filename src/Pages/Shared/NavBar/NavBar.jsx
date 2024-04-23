@@ -1,8 +1,22 @@
-import { NavLink } from "react-router-dom";
-import LogInBtn from "../../../Components/Buttons/LogInBtn";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../Contexts/AuthProvider";
+// import LogInBtn from "../../../Components/Buttons/LogInBtn";
 
 
 const NavBar = () => {
+
+    const {user, logOut} = useContext(AuthContext);
+
+    const handleSignOut = ()=>{
+        logOut()
+        .then()
+        .catch(error=>{
+            console.log(error)
+        })
+    }
+
+
     return (
         <div className="navbar bg-[#D9ED92] ">
             <div className="navbar-start">
@@ -34,7 +48,16 @@ const NavBar = () => {
 
                     </div>
                 </div>
-                <LogInBtn></LogInBtn>
+                {
+                    user ? 
+                    <button onClick={handleSignOut} className="btn btn-primary">Sign Out</button>
+                    :
+                    <Link to={'/sign-in'}>
+                        <button className="btn btn-primary">Login</button>
+                    </Link>
+                }
+                
+                {/* <LogInBtn></LogInBtn> */}
             </div>
         </div>
     );

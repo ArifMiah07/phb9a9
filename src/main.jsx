@@ -6,20 +6,19 @@ import router from './Routes/Routes'
 import { HelmetProvider } from 'react-helmet-async'
 import { BannerProvider } from './Contexts/BannerContext'
 import { ApartmentProvider } from './Contexts/ApartmentContext'
+import AuthProvider from './Contexts/AuthProvider'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  
-    <BannerProvider>
-    <ApartmentProvider>
-        <HelmetProvider>
-          <RouterProvider router={router}>      
-          </RouterProvider>
-        </HelmetProvider>
-    </ApartmentProvider>
-      </BannerProvider>
-    {/* <AuthProvider>
-    </AuthProvider> */}
-      
+    <AuthProvider>
+      <BannerProvider>
+        <ApartmentProvider>
+            <HelmetProvider>
+              <RouterProvider router={router}>      
+              </RouterProvider>
+            </HelmetProvider>
+          </ApartmentProvider>
+        </BannerProvider>
+    </AuthProvider>
   </React.StrictMode>,
 )

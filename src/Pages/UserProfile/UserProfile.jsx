@@ -1,4 +1,4 @@
-// import React, { useState, useEffect } from 'react';
+
 // import { useAuth } from '../contexts/AuthContext'; // Import your Firebase authentication context
 
 const UserProfile = () => {
@@ -19,7 +19,7 @@ const UserProfile = () => {
     return (
         <div className="container mx-auto">
             <h1 className="text-2xl font-bold my-4">User Profile</h1>
-            {userData ? (
+            {/* {userData ? (
                 <div className="max-w-lg mx-auto">
                     <div className="mb-4">
                         <label htmlFor="displayName" className="block text-sm font-semibold">Display Name</label>
@@ -54,7 +54,7 @@ const UserProfile = () => {
                 </div>
             ) : (
                 <p>Loading user profile...</p>
-            )}
+            )} */}
         </div>
     );
 };

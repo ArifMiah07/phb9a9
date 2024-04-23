@@ -9,7 +9,9 @@ const LogIn = () => {
 
         const formData = new FormData(e.target);
         const email = formData.get('email');
-        console.log(email);
+        const name = formData.get('name');
+        const password = formData.get('password');
+        console.log(name, email, password);
             }
     return (
         <div>
@@ -39,7 +41,7 @@ const LogIn = () => {
                         <label className="label">
                             <span className="label-text">Password</span>
                         </label>
-                        <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                        <input type="text" name="password" placeholder="password" className="input input-bordered" required />
                         <label className="label">
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>
