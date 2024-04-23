@@ -9,6 +9,7 @@ import Register from "../Pages/Register/Register";
 import ApartmentCardDetails from "../Components/ApartmentCardDetails/ApartmentCardDetails";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import About from "../Pages/About/About";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/update-profile',
-                element: <UpdateProfile></UpdateProfile>
+                element: <PrivateRoute> <UpdateProfile></UpdateProfile></PrivateRoute>
             },
             {
                 path: '/user-profile',

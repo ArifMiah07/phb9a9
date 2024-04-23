@@ -1,9 +1,18 @@
+import { useContext } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Contexts/AuthProvider";
 
 
 const LogIn = () => {
+
+    const {signIn} = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log('linlip',location);
+
+
     const handleLogin = e =>{
         e.preventDefault();
 
@@ -12,7 +21,18 @@ const LogIn = () => {
         const name = formData.get('name');
         const password = formData.get('password');
         console.log(name, email, password);
-            }
+        signIn(email, password)
+        .then(result => {
+            console.log(result.user);
+            navigate(location?.state ? location.state : '/')
+        })
+        .catch(error =>{
+            console.log(error);
+        })
+
+
+
+    }
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
