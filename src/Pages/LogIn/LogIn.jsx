@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -7,15 +7,14 @@ import { AuthContext } from "../../Contexts/AuthProvider";
 
 const LogIn = () => {
 
-    const {signIn, signInWithGoogle} = useContext(AuthContext);
+    const {signIn, signInWithGoogle, user} = useContext(AuthContext);
+    const [errorMsg, setErrorMsg] = useState('')
     const location = useLocation();
     const navigate = useNavigate();
-    console.log('linlip',location);
-
 
     const handleLogin = e =>{
         e.preventDefault();
-
+        
         const formData = new FormData(e.target);
         const email = formData.get('email');
         const name = formData.get('name');
@@ -25,18 +24,19 @@ const LogIn = () => {
         .then(result => {
             console.log(result.user);
             navigate(location?.state ? location.state : '/')
+            
         })
         .catch(error =>{
-            console.log(error);
+            return setErrorMsg(error.code);
         });
-
-
-        
-        
     }
     const handleGoogleLogin = () => {
         signInWithGoogle(); 
+        navigate('/');
     };
+
+
+
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
@@ -69,6 +69,11 @@ const LogIn = () => {
                         <label className="label">
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>
+                        {errorMsg &&
+                            <div>
+                            <p className="text-red-500 font-bold">{errorMsg}</p>
+                            <h1 className="text-green-700">please write correct email and password </h1>
+                        </div>}
                         </div>
                         <div className="form-control mt-6">
                         <button className="btn btn-primary">Login</button>

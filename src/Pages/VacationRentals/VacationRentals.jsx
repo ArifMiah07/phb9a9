@@ -22,8 +22,8 @@ const VacationRentals = () => {
                 loop={true}
                 autoplay = {{delay : 2610}}
                 pagination={{ clickable: true }}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                // onSlideChange={() => console.log('slide change')}
+                // onSwiper={(swiper) => console.log(swiper)}
                 >
                     {vacationData.map((data) => (
                     <SwiperSlide className=" w-full h-full  flex flex-col md:flex md:flex-row lg:flex lg:flex-row rounded-xl border border-[#afb3b5]" key={data.id}>

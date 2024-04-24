@@ -1,15 +1,19 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthProvider";
+// import { Navigate, useLocation } from "react-router-dom";
 
 const NavBar = () => {
     const { user, logOut } = useContext(AuthContext);
+
+    // const location = useLocation();
+    
 
     const handleSignOut = () => {
         logOut()
             .then()
             .catch(error => {
-                console.log(error)
+                console.log('error msg from:', error)
             })
     }
 
@@ -37,12 +41,14 @@ const NavBar = () => {
                     <li><NavLink to={`/about`}>About</NavLink></li>
                 </ul>
             </div>
+            <div>
+            </div>
             <div className="navbar-end">
-                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                {user && <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
-                        {user ? <img alt="User Avatar" src={user.photoURL} /> : <span>Guest</span>}
+                        {user ? <img title={`${user.displayName}`} className={``} alt="User Avatar" src={user.photoURL} /> : <span>{user?.displayName}</span>}
                     </div>
-                </div>
+                </div>}
                 {user ? (
                     <button onClick={handleSignOut} className="btn btn-primary">Sign Out</button>
                 ) : (

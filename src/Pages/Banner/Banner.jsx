@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
     const { bannerData } = useBannerContext();
 
-    console.log(bannerData[0]);
+    // console.log(bannerData[0]);
 
     return (
         <>
@@ -22,8 +22,8 @@ const Banner = () => {
                     autoplay={{ delay: 2610 }}
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    // onSlideChange={() => console.log('slide change')}
+                    // onSwiper={(swiper) => console.log(swiper)}
                 >
                     {bannerData.map((data) => (
                         <SwiperSlide key={data.id}>

@@ -12,6 +12,7 @@ note: i added aos and animate css but due to bigger img size website keeps loadi
 5. react icons ``` js from``` | ```js npm install react-icons --save```
 6. proptypes ```js npm i proptypes```
 7. firebase```js npm install firebase```
+8. ```js npm install --save react-toastify```
 ### npm packages
 1. swipper js```js npm install swiper```
 2. AOS ``` js npm install aos --save  ```
