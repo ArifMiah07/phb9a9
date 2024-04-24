@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div>
             <Helmet>
-                <title>About | Root</title>
+                <title>About </title>
             </Helmet>
             <div className="about-page p-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

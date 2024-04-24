@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { createContext, useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, GoogleAuthProvider, updateProfile, GithubAuthProvider  } from "firebase/auth";
 import app from '../Firebase/firebase.config';
+import { toast } from 'react-toastify';
 
 export const AuthContext = createContext(null);
 
@@ -13,6 +14,22 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
+
+    //update profile
+    const updateUserProfile = async ({ displayName, photoUrl, email, password }) => {
+        setLoading(true);
+        try {
+            await updateProfile(auth.currentUser, { displayName, photoURL: photoUrl });
+            setUser(auth.currentUser);
+            setLoading(false);
+            toast.success('Profile updated successfully!!');
+            console.log("Profile updated successfully!");
+        } catch (error) {
+            toast.error("Error updating profile:", error);
+            console.error("Error updating profile:", error);
+            throw error;
+        }
+    };
 
     //github login
     const signInWithGithub = () =>{
@@ -67,7 +84,7 @@ const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
-            console.log('set user in the current state change', currentUser);
+            // console.log('set user in the current state change', currentUser);
             setUser(currentUser);
             setLoading(false);
         });
@@ -84,6 +101,7 @@ const AuthProvider = ({ children }) => {
         logOut,
         signInWithGoogle, 
         signInWithGithub,
+        updateUserProfile,
     };
 
     return (

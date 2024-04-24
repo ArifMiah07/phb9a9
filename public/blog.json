@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "title": "Essential Tips for First-Time Homebuyers",
+        "author": "John Doe",
+        "date": "April 20, 2024",
+        "image": "https://placeimg.com/640/480/architecture",
+        "content": "Are you planning to buy your first home? Here are some essential tips to help you navigate the process smoothly."
+    },
+    {
+        "id": 2,
+        "title": "Effective Home Staging Strategies for Quick Sales",
+        "author": "Jane Smith",
+        "date": "April 15, 2024",
+        "image": "https://placeimg.com/640/480/house",
+        "content": "Learn how to stage your home effectively to attract potential buyers and achieve a quick sale at the best price."
+    },
+    {
+        "id": 3,
+        "title": "The Advantages of Investing in Rental Properties",
+        "author": "Michael Johnson",
+        "date": "April 10, 2024",
+        "image": "https://placeimg.com/640/480/buildings",
+        "content": "Discover the benefits of investing in rental properties and how it can provide a steady income stream and long-term wealth."
+    },
+    {
+        "id": 4,
+        "title": "5 Common Mistakes to Avoid When Selling Your Home",
+        "author": "Sarah Williams",
+        "date": "April 5, 2024",
+        "image": "https://placeimg.com/640/480/real-estate",
+        "content": "Avoid these common pitfalls when selling your home to ensure a smooth and successful transaction."
+    },
+    {
+        "id": 5,
+        "title": "Understanding Property Taxes: A Guide for Homeowners",
+        "author": "David Brown",
+        "date": "March 30, 2024",
+        "image": "https://placeimg.com/640/480/city",
+        "content": "Learn about property taxes and how they impact homeowners, including strategies for managing and reducing tax burdens."
+    },
+    {
+        "id": 6,
+        "title": "Top Neighborhoods for Real Estate Investment in 2024",
+        "author": "Emily Johnson",
+        "date": "March 25, 2024",
+        "image": "https://placeimg.com/640/480/neighborhood",
+        "content": "Explore the top neighborhoods and areas for real estate investment opportunities in the current market."
+    },
+    {
+        "id": 7,
+        "title": "Renovation Tips to Increase Your Home's Value",
+        "author": "Daniel Clark",
+        "date": "March 20, 2024",
+        "image": "https://placeimg.com/640/480/renovation",
+        "content": "Discover renovation ideas and tips to enhance your home's appeal and increase its resale value."
+    },
+    {
+        "id": 8,
+        "title": "Navigating the Mortgage Process: A Beginner's Guide",
+        "author": "Emma Wilson",
+        "date": "March 15, 2024",
+        "image": "https://placeimg.com/640/480/mortgage",
+        "content": "Learn about the mortgage process, including types of mortgages, requirements, and tips for securing the best loan."
+    },
+    {
+        "id": 9,
+        "title": "Tips for Successful Real Estate Investing in a Competitive Market",
+        "author": "Ryan Thompson",
+        "date": "March 10, 2024",
+        "image": "https://placeimg.com/640/480/investment",
+        "content": "Get valuable tips and strategies for successful real estate investing in a competitive market environment."
+    },
+    {
+        "id": 10,
+        "title": "The Impact of Technology on Real Estate Transactions",
+        "author": "Sophia Lee",
+        "date": "March 5, 2024",
+        "image": "https://placeimg.com/640/480/technology",
+        "content": "Explore how technology is transforming real estate transactions, from virtual tours to digital contracts."
+    },
+    {
+        "id": 11,
+        "title": "Sustainable Living: Eco-Friendly Homes and Green Real Estate Trends",
+        "author": "Oliver Green",
+        "date": "February 29, 2024",
+        "image": "https://placeimg.com/640/480/sustainable",
+        "content": "Learn about eco-friendly homes and green real estate trends, including sustainable building practices and energy-efficient features."
+    },
+    {
+        "id": 12,
+        "title": "Real Estate Market Trends: Forecast for 2024",
+        "author": "Ava Anderson",
+        "date": "February 25, 2024",
+        "image": "https://placeimg.com/640/480/market",
+        "content": "Stay updated on the latest real estate market trends and forecasts for the year 2024, including predictions for housing prices and sales."
+    }
+]

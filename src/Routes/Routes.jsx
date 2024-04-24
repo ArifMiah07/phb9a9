@@ -10,6 +10,7 @@ import ApartmentCardDetails from "../Components/ApartmentCardDetails/ApartmentCa
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import About from "../Pages/About/About";
 import PrivateRoute from "./PrivateRoute";
+import Blog from "../Pages/Blog/Blog";
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About></About>
+            },
+            {
+                path: '/blog',
+                element: <PrivateRoute><Blog></Blog></PrivateRoute>
             },
             {
                 path: '/apartments-card-details/:id',
