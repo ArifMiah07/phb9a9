@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import BlogPost from '../../Components/BlogPost/BlogPost';
+import { Helmet } from 'react-helmet-async';
 
 const Blog = () => {
 
@@ -11,8 +12,10 @@ const Blog = () => {
         .then(data => setBlog(data));
     },[])
     return (
-        <div>
-            <h1>this is bog</h1>
+        <div className='lg:w-[1170px] mx-auto p-5'>
+            <Helmet>
+                <title>Blog</title>
+            </Helmet>
             {
                 blog.map((blogCard)=> <BlogPost key={blogCard.id} blogCard={blogCard}></BlogPost>)
             }
