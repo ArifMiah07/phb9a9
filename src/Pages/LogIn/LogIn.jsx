@@ -7,7 +7,7 @@ import { AuthContext } from "../../Contexts/AuthProvider";
 
 const LogIn = () => {
 
-    const {signIn, signInWithGoogle, user} = useContext(AuthContext);
+    const {signIn, signInWithGoogle, signInWithGithub ,user} = useContext(AuthContext);
     const [errorMsg, setErrorMsg] = useState('')
     const location = useLocation();
     const navigate = useNavigate();
@@ -30,10 +30,17 @@ const LogIn = () => {
             return setErrorMsg(error.code);
         });
     }
+    //google login
     const handleGoogleLogin = () => {
         signInWithGoogle(); 
         navigate('/');
     };
+
+    //github login
+    const handleGithubLogin = () =>{
+        signInWithGithub();
+        navigate('/');
+    }
 
 
 
@@ -85,7 +92,7 @@ const LogIn = () => {
                                 <FcGoogle />
                                     Login with Google
                                 </button>
-                                <button className="btn btn-outline">
+                                <button onClick={handleGithubLogin} className="btn btn-outline">
                                 <FaGithub />
                                     Login with Github
                                 </button>

@@ -53,7 +53,7 @@ const NavBar = () => {
                     <button onClick={handleSignOut} className="btn btn-primary">Sign Out</button>
                 ) : (
                     <Link to={'/sign-in'}>
-                        <button className="btn btn-primary">Login</button>
+                        <button className="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline animate-pulse animate-bounce">Login</button>
                     </Link>
                 )}
             </div>

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Contexts/AuthProvider";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -8,6 +8,10 @@ const Register = () => {
     const { createUser, user } = useContext(AuthContext);
     // const [errorMsg, setErrorMsg] = useState('');
     const [showPassword, setShowPassword] = useState(false); 
+
+    const navigate = useNavigate();
+
+    
 
     const handleRegister = async (e) => {
         e.preventDefault();
@@ -27,6 +31,8 @@ const Register = () => {
         try {
             await createUser(email, password, displayName, photoUrl);
             toast.success('Registration successful!'); // Show success toast
+            navigate('/');
+
         } catch (error) {
             console.error(error);
             // setErrorMsg(error.code);
@@ -35,7 +41,7 @@ const Register = () => {
     };
 
     const togglePasswordVisibility = () => {
-        setShowPassword(prevState => !prevState); // Toggle password visibility state
+        setShowPassword(prevState => !prevState); 
     };
 
     if (user) {
